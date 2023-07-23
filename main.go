@@ -12,8 +12,7 @@ var tlds = [1467]string{"भारतम्", "nokia", "vin", "audio", "az", "vi
 
 func main() {
 	if len(os.Args) < 2 {
-		println("supply me with some arguments dumbass")
-		println("example: " + os.Args[0] + " damn")
+		println("supply me with some arguments dumbass\nexample: " + os.Args[0] + " your word or sentence here")
 		os.Exit(1)
 	} else {
 		word := ""
