@@ -20,6 +20,12 @@ func main() {
 			word += thing
 		}
 		word = strings.ToLower(word)
+		for index, thing := range word {
+			thing := string(thing)
+			if thing == "." {
+				word = word[:index] + word[index+1:]
+			}
+		}
 		println("searching for tld overlaps with " + word)
 		for _, tld := range tlds {
 			if len(tld) < len(word) && word[len(word)-len(tld):] == tld {
