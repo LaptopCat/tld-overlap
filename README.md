@@ -1,6 +1,6 @@
 # tld-overlap
 
-## small cli thing that checks a word for tld overlaps / domain hacks
+## small cli thing that checks a word / text for tld overlaps / domain hacks
 
 # running it
 first, you need to install the [go programming language](https://go.dev/)
