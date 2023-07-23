@@ -24,10 +24,7 @@ func main() {
 		println("searching for tld overlaps with " + word)
 		for _, tld := range tlds {
 			if len(tld) < len(word) && word[len(word)-len(tld):] == tld {
-				domain := string(word[:len(word)-len(tld)])
-				if !(string(domain[len(domain)-1]) == ".") {
-					println("found " + domain + "." + tld)
-				}
+				println("found " + string(word[:len(word)-len(tld)]) + "." + tld)
 			}
 		}
 	}
